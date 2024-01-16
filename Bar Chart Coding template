@@ -1,0 +1,19 @@
+// Create Bar Chart
+  // Create trace for bar chart
+  var trace1 = {
+      x : top_ten[0],
+      y : top_ids[0].map(x => "OTU" + x),
+      text : top_labels[0],
+      type : 'bar',
+      orientation : 'h',
+      transforms: [{
+          type: 'sort',
+          target: 'y',
+          order: 'descending',
+        }],
+      marker: {
+        color: 'rgb(#, #, #)',
+        opacity: #,
+        line: {
+          color: 'rgb(#,#,#)',
+          width: #
